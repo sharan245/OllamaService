@@ -1,0 +1,31 @@
+#~~~~~~~~~~~~~~~~~~~~~Spring/AI~~~~~~~~~~~~~~~~~~~~~~~~~~~
+spring:
+  application:
+    name: OllamaService
+    #main:
+      #web-application-type: none
+  config:
+    import:
+      - classpath:application-ollama.yml
+      - classpath:application-database.yml
+
+#~~~~~~~~~~~~~~~~~~logging configuration~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+logging:
+  level:
+    com.ollamaService: DEBUG
+
+#~~~~~~~~~~~~~~~~~~~~Tools configuration~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mcp:
+  tools:
+    sendMail:
+      enabled: true
+    qa:
+      enabled: true
+  token:
+    maxHistoryMessage: 10
+    lastNMessagesToRemain: 5
+
+#~~~~~~~~~ server config ~~~~~~~~~~~~~~~
+server:
+  port: 8080
+  allow-origin: http://localhost:5173
