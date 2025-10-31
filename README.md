@@ -20,4 +20,4 @@ This helper service provides an easy-to-use interface for **chat memory manageme
 ## ⚡ Quick Start
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/ollama-service.git
+   https://github.com/sharan245/OllamaService.git
